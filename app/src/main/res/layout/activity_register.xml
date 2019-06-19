@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/register"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/text_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="20dp"
+        android:text="注册一个购物账号"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/logname"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/text_register"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:drawableLeft="@drawable/user"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:hint="用户名"
+        android:background="@drawable/registertext"/>
+
+    <EditText
+        android:id="@+id/register_password"
+        android:drawableLeft="@drawable/key"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/logname"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:background="@drawable/registertext"/>
+
+    <EditText
+        android:id="@+id/address"
+        android:drawableLeft="@drawable/location"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:hint="地址"
+        android:background="@drawable/registertext"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_marginLeft="16dp"
+        android:drawableLeft="@drawable/phone"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/address"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:hint="手机号码"
+        android:background="@drawable/registertext"/>
+
+    <EditText
+        android:id="@+id/realname"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:drawableLeft="@drawable/solution"
+        android:layout_below="@id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:hint="真实姓名"
+        android:background="@drawable/registertext"/>
+
+    <ImageButton
+        android:id="@+id/btn_register"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/realname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/jiantouyou"
+        android:background="@drawable/btnround" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProduct">
+
+    <TextView
+        android:id="@+id/text_addproduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="20dp"
+        android:text="添加商品"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/productname"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/text_addproduct"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:drawableLeft="@drawable/user"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:hint="商品名称"
+        android:background="@drawable/registertext"/>
+
+    <EditText
+        android:id="@+id/productprice"
+        android:drawableLeft="@drawable/key"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/productname"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:hint="商品价格"
+        android:background="@drawable/registertext"/>
+
+    <EditText
+        android:id="@+id/productintro"
+        android:drawableLeft="@drawable/location"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/productprice"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:hint="商品简介"
+        android:background="@drawable/registertext"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_below="@id/productintro"
+        android:id="@+id/id_radiogroup"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_change"
+            android:textAlignment="center"
+            android:layout_marginRight="10dp"
+            android:button="@null"
+            android:id="@+id/fruit"
+            android:checked="true"
+            android:text="水果" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/select_change"
+            android:textAlignment="center"
+            android:button="@null"
+            android:id="@+id/ls"
+            android:text="零食" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_change"
+            android:textAlignment="center"
+            android:button="@null"
+            android:id="@+id/sx"
+            android:text="生鲜"/>
+
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/productphoto"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/id_radiogroup"
+        android:layout_centerHorizontal="true"
+        android:layout_width="50dp"
+        android:src="@drawable/plus"
+        android:background="@drawable/btnround"
+        android:layout_height="50dp" />
+
+
+
+    <ImageButton
+        android:id="@+id/btn_addproduct"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/productphoto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/jiantouyou"
+        android:background="@drawable/btnround" />
+
+</RelativeLayout>
